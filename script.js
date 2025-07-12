@@ -6,4 +6,7 @@ async function display(){
 	document.getElementById("output").appendChild(node);
 }
 
-document.querySelector("form").addEventListener("submit",display());
+document.querySelector("form").addEventListener("submit",function(e) =>{
+	e.preventDefault();
+	display();
+});
