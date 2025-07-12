@@ -3,7 +3,7 @@ const mynumber = document.getElementById("delay").value.trim();
 
 async function display(){
 	const myoutput = await new Promise(resolve => setTimeout(() => resolve(mytext),mynumber*1000));
-	document.getElementById("output").appendChild(myoutput);
+	document.getElementById("output").appendChild(node);
 }
 
 document.querySelector("form").addEventListener("submit",display());
