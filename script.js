@@ -3,6 +3,8 @@ const mynumber = document.getElementById("delay").value.trim();
 
 async function display(){
 	const myoutput = await new Promise(resolve => setTimeout(() => resolve(mytext),mynumber*1000));
+	const node = document.createElement("div");
+    node.textContent = myoutput;
 	document.getElementById("output").appendChild(node);
 }
 
