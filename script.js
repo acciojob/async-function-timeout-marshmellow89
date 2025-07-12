@@ -11,7 +11,7 @@ async function display() {
   document.getElementById("output").appendChild(node);
 }
 
-document.querySelector("#btn").addEventListener("submit", function(e) {
+document.querySelector("#btn").addEventListener("click", function(e) {
   e.preventDefault();
   display();
 });
