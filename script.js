@@ -1,6 +1,6 @@
 async function display() {
   const mytext = document.getElementById("text").value.trim();
-  const mynumber = document.getElementById("delay").valueAsNumber();
+  const mynumber = document.getElementById("delay").valueAsNumber;
 
   await new Promise(resolve => 
     setTimeout(resolve, mynumber)
