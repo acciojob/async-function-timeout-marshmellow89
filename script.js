@@ -6,9 +6,13 @@ async function display() {
     setTimeout(() => resolve(mytext), mynumber * 1000)
   );
 
-  const node = document.createElement("div");
-  node.textContent = myoutput;
-  document.getElementById("output").appendChild(node);
+  // const mydiv = document.createElement("div");
+  // mydiv.textContent = myoutput;
+  // document.getElementById("output").appendChild(node);
+
+	const mydiv = document.getElementById("output");
+	mydiv.textContent = myoutput;
+	mydiv.appendChild(mydiv);
 }
 
 document.querySelector("#btn").addEventListener("click", function(e) {
